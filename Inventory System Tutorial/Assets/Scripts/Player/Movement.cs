@@ -22,7 +22,6 @@ public class Movement : MonoBehaviour {
     void Update() {
         horizontal = Input.GetAxisRaw("Horizontal");
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsJumpable);
-
         #region Sprite Flip
         if (horizontal != 0f) {
             if (horizontal < 0f) {
